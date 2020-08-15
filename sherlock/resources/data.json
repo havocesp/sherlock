@@ -936,6 +936,14 @@
     "username_claimed": "jcs",
     "username_unclaimed": "noonewouldeverusethis7"
   },
+  "LocalBitcoins": {
+    "errorMsg": "Error! Invalid user.",
+    "errorType": "message",
+    "url": "https://localbitcoins.com/p/{}/",
+    "urlMain": "https://localbitcoins.com/",
+    "username_claimed": "blue",
+    "username_unclaimed": "noonewouldeverusethis7"
+  },
   "Lolchess": {
     "errorMsg": "No search results",
     "errorType": "message",
@@ -1176,6 +1184,13 @@
     "urlMain": "https://www.paypal.me/",
     "username_claimed": "blue",
     "username_unclaimed": "noneownsthisusername7"
+  },
+  "Paxful": {    
+    "errorType": "status_code",
+    "url": "https://paxful.com/user/{}",
+    "urlMain": "https://paxful.com/",
+    "username_claimed": "blue",
+    "username_unclaimed": "noonewouldeverusethis7"
   },
   "Periscope": {
     "errorType": "status_code",
