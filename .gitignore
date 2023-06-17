@@ -22,8 +22,14 @@ src/
 # Comma-Separated Values (CSV) Reports
 *.csv
 
+#XLSX Reports
+*.xlsx
+
 # Excluded sites list
 tests/.excluded_sites
 
 # MacOS Folder Metadata File
 .DS_Store
+
+# Vim swap files
+*.swp
