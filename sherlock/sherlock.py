@@ -344,8 +344,7 @@ def sherlock(
 
         # Retrieve other site information again
         url = results_site.get("url_user")
-        status = results_site.get("status")
-        if status is not None:
+        if (status := results_site.get("status")) is not None:
             # We have already determined the user doesn't exist here
             continue
 
