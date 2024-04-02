@@ -4,8 +4,8 @@ This module supports storing information about websites.
 This is the raw data that will be used to search for usernames.
 """
 import json
-import requests
 import secrets
+from security import safe_requests
 
 class SiteInformation:
     def __init__(self, name, url_home, url_username_format, username_claimed,
@@ -120,7 +120,7 @@ class SitesInformation:
         if data_file_path.lower().startswith("http"):
             # Reference is to a URL.
             try:
-                response = requests.get(url=data_file_path)
+                response = safe_requests.get(url=data_file_path)
             except Exception as error:
                 raise FileNotFoundError(
                     f"Problem while attempting to access data file URL '{data_file_path}':  {error}"
