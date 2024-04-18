@@ -76,7 +76,7 @@ class SherlockBaseTest(unittest.TestCase):
         site_data = {}
         for site in site_list:
             with self.subTest(f"Checking test vector Site '{site}' "
-                              f"exists in total site data."
+                              "exists in total site data."
                              ):
                 site_data[site] = self.site_data_all[site]
 
@@ -130,7 +130,7 @@ class SherlockBaseTest(unittest.TestCase):
                         #Some error connecting to site.
                         self.skipTest(f"Skipping Username '{username}' "
                                       f"{check_type_text} on Site '{site}':  "
-                                      f"Site returned error status."
+                                      "Site returned error status."
                                      )
 
                     self.assertEqual(exist_result_desired,

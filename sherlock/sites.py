@@ -127,7 +127,7 @@ class SitesInformation:
                 )
 
             if response.status_code != 200:
-                raise FileNotFoundError(f"Bad response while accessing "
+                raise FileNotFoundError("Bad response while accessing "
                                         f"data file URL '{data_file_path}'."
                                         )
             try:
@@ -149,7 +149,7 @@ class SitesInformation:
                         )
 
             except FileNotFoundError:
-                raise FileNotFoundError(f"Problem while attempting to access "
+                raise FileNotFoundError("Problem while attempting to access "
                                         f"data file '{data_file_path}'."
                                         )
 
