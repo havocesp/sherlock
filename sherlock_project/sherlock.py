@@ -731,7 +731,7 @@ def main():
 
     # Check for newer version of Sherlock. If it exists, let the user know about it
     try:
-        latest_release_raw = requests.get(forge_api_latest_release).text
+        latest_release_raw = requests.get(forge_api_latest_release, timeout=60).text
         latest_release_json = json_loads(latest_release_raw)
         latest_remote_tag = latest_release_json["tag_name"]
 
